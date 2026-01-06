@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그린스텝 2026 마라톤</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">GREEN STEP 2026</div>
+        <nav>
+            <ul>
+                <li><a href="#about">대회 소개</a></li>
+                <li><a href="#courses">코스 안내</a></li>
+                <li><a href="#register">참가 신청</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>그린스텝 2026<br>마라톤</h1>
+            <p>지구를 위한 힘찬 발걸음, 함께 달리세요!</p>
+            <p style="font-size: 1.2rem; margin-top: -1rem; margin-bottom: 2rem; opacity: 0.9;">2026년 4월 5일 (식목일) | 서울 숲</p>
+            <a href="#register" class="btn">참가 신청하기</a>
+        </div>
+    </section>
+
+    <section id="about" class="info-section">
+        <h2 class="section-title">대회 개요</h2>
+        <div class="info-grid">
+            <div class="info-card">
+                <div class="info-icon">🌱</div>
+                <h3>Eco-Friendly</h3>
+                <p>일회용품 없는 친환경 대회입니다.<br>개인 텀블러를 지참해주세요.</p>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">🎁</div>
+                <h3>참가 기념품</h3>
+                <p>재활용 소재 러닝 티셔츠 및<br>완주 메달 증정</p>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">📅</div>
+                <h3>일시 및 장소</h3>
+                <p>2026.04.05(일) 08:00<br>서울 숲 가족마당 집결</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses" class="course-section">
+        <div class="info-section" style="background: transparent; padding-top: 0;">
+            <h2 class="section-title">코스 안내</h2>
+            <div class="course-grid">
+                <div class="course-option">
+                    <h3 style="color: var(--primary-color); font-size: 2rem;">5km</h3>
+                    <p style="margin: 1rem 0;">가족과 함께 가볍게 즐기는 코스</p>
+                    <p><strong>참가비:</strong> 30,000원</p>
+                </div>
+                <div class="course-option">
+                    <h3 style="color: var(--primary-color); font-size: 2rem;">10km</h3>
+                    <p style="margin: 1rem 0;">도심 속 자연을 만끽하는 코스</p>
+                    <p><strong>참가비:</strong> 40,000원</p>
+                </div>
+                <div class="course-option">
+                    <h3 style="color: var(--primary-color); font-size: 2rem;">Half</h3>
+                    <p style="margin: 1rem 0;">한계를 도전하는 러너들을 위한 코스</p>
+                    <p><strong>참가비:</strong> 50,000원</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="register" class="registration-section">
+        <div class="form-container">
+            <h2 class="section-title" style="margin-bottom: 2rem;">참가 신청</h2>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="name">이름 (Name)</label>
+                    <input type="text" id="name" class="form-control" required placeholder="홍길동">
+                </div>
+                <div class="form-group">
+                    <label for="employeeId">사번 (Employee ID)</label>
+                    <input type="text" id="employeeId" class="form-control" required placeholder="123456">
+                </div>
+                <div class="form-group">
+                    <label for="dept">부서 (Department)</label>
+                    <input type="text" id="dept" class="form-control" required placeholder="방송기술부">
+                </div>
+                <div class="form-group">
+                    <label for="course">참가 종목 (Course)</label>
+                    <select id="course" class="form-control" required>
+                        <option value="" disabled selected>코스를 선택하세요</option>
+                        <option value="5km">5km (30,000원)</option>
+                        <option value="10km">10km (40,000원)</option>
+                        <option value="half">Half (50,000원)</option>
+                    </select>
+                </div>
+                <div class="form-group" style="text-align: center; margin-top: 2rem;">
+                    <button type="submit" class="btn" style="width: 100%;">신청 완료</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Green Step Marathon. All rights reserved.</p>
+            <p style="font-size: 0.8rem; margin-top: 0.5rem; opacity: 0.7;">Organizer: Company Name | Contact: marathon@company.com</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
